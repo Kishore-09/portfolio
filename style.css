@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('background.jpg'); /* Add your background image */
+    background-image: url('assets/background.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -53,5 +53,3 @@ button:hover {
 
 /* Smooth scrolling */
 html {
-    scroll-behavior: smooth;
-}
