@@ -8,12 +8,14 @@
 }
 html{
    scroll-behavior:smooth;
+  
 }
 
 body{
-    background: url("images/leaves_bushes_green_174515_3840x2400.jpg") no-repeat center;
+    background: url("images/background.png") no-repeat center;
     background-size: cover;
     background-attachment: fixed;
+    
 }
 
 .favicon{
@@ -28,6 +30,7 @@ body{
 
 .navbar {
     position: fixed;
+    top: 0;
     width: 100%;
     z-index: 999;
     padding: 30px 0;
@@ -38,19 +41,20 @@ body{
 .navbar.sticky {
     padding: 30px 0;
     box-shadow: 0px 10px 50px 5px #00000038;
+    background-color: black;
 }
 
 .navbar.sticky::before {
     content: '';
-    background: url("images/dark-green-leaves-background-hydrangea-260nw-1699508995.jpg") ;
+    background: url("images/background.png") ;
     position: absolute;
-    opacity: 1;
+    opacity: 0;
     top: -10px;
     left: -10px;
     width: 105vw;
     height:110%;
     z-index: -1;
-    filter: blur(1.5px);
+    filter: blur(1.5px); 
 }
 
 .navbar .max-width {
@@ -132,7 +136,7 @@ body{
 
 .home {
     display: flex;
-    background: url("images/leaves_bushes_green_174515_3840x2400.jpg") no-repeat center;
+    background: url("images/background.png") no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
@@ -174,10 +178,10 @@ section{
     padding: 120px 0;
     padding-bottom: 300px;
 }
-.about, .services, .skills, .contact, footer{
+.about, .projects, .skills, .contact, footer{
     font-family: 'Poppins',sans-serif;
 }
-.about .about-content, .services .serv-content, .skills .skills-content, .contact, .contact-content{
+.about .about-content, .projects .serv-content, .skills .skills-content, .contact, .contact-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -215,7 +219,7 @@ section .title::after{
 }
 /* about section styling */
 .about{
-    background: url("images/leaves_bushes_green_174515_3840x2400.jpg");
+    background: url("images/background.png");
     background-size: 2000px;
 }
 .about .title::after{
@@ -245,10 +249,11 @@ section .title::after{
  }
  .about .about-content .right .text span{
      color: #23b410;
+     font-size: 50px;
  }
  .about .about-content .right .paragraph{
      color: white;
-     font-size: 18px;
+     font-size: 20px;
  }
  .about .about-content .right .p{
      text-align: justify;
@@ -270,21 +275,21 @@ section .title::after{
      background:none;
  }
  
- /* services styling */
- .services{
+ /* projects styling */
+ .projects{
      color: white;
      background:black;
-     background: url("images/leaves_bushes_green_174515_3840x2400.jpg");
+     background: url("images/background.png");
      background-size: 2000px;
  }
- .services .title::before{
+ .projects .title::before{
     background: white;
 }
- .services .title::after{
+ .projects .title::after{
      background: black;
      content: "What I provide";
  }
- .services .serv-content .card{
+ .projects .serv-content .card{
      width: calc(33% - 20px);
      text-align:center;
      background:none;
@@ -293,24 +298,24 @@ section .title::after{
      cursor: pointer;
      transition: all 0.3s ease;
  }
- .services .serv-content .card:hover {
+ .projects .serv-content .card:hover {
      background:  none;
  }
- .services .serv-content .card .box{
+ .projects .serv-content .card .box{
       transition: all 0.3s ease;
  }
- .services .serv-content .card:hover .box{
+ .projects .serv-content .card:hover .box{
       transform: scale(1.05);
 }
- .services .serv-content .card i{
+ .projects .serv-content .card i{
      font-size: 50px; 
      color: #23b410;
      transition:color 0.3s ease;
  }
- .services .serv-content .card:hover i{
+ .projects .serv-content .card:hover i{
     color: #23b410;
 }
- .services .serv-content .card .text{
+ .projects .serv-content .card .text{
      font-size: 25px;
      font-weight: 500;
      margin: 10px 0 7px 0;
@@ -319,7 +324,7 @@ section .title::after{
 /* Skills Section Styling */
 
 .skills{
-    background: url("images/leaves_bushes_green_174515_3840x2400.jpg");
+    background: url("images/background.png");
     background-size: 2000px;
 }
 
@@ -451,7 +456,7 @@ section .title::after{
 
  /* contact section styling */
  .contact{
-    background: url("images/leaves_bushes_green_174515_3840x2400.jpg");
+    background: url("images/background.png");
     background-size: 2000px;
  }
  .contact .title::after{
@@ -557,7 +562,7 @@ section .title::after{
 
 /* footer styling */
 footer{
-    background: url("images/dark-green-leaves-background-hydrangea-260nw-1699508995.jpg") ;
+    background: url("images/background.png") ;
     padding: 20px 23px;
     color: white;
 }
@@ -730,7 +735,7 @@ footer i:hover{
     .about .about-content .right{
         flex: 100%;
     }
-    .services .serv-content .card{
+    .projects .serv-content .card{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
@@ -749,7 +754,7 @@ footer i:hover{
     .home .home-content .text-3 {
         font-size: 32px;
     }
-    .services .serv-content .card, .skills .skills-content .column,.contact .contact-content .column{
+    .projects .serv-content .card, .skills .skills-content .column,.contact .contact-content .column{
         width: 100%;
     }
 }

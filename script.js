@@ -40,9 +40,9 @@ $(document).ready(function () {
         
     });
     var typed = new Typed(".typing-2",{
-        strings: ["Your Skill","Your Hobby","Your Passion","Your Proficiency"],
+        strings: ["Hello, Everyone"," Hola, Amigos "," Bonjour, mes amis ","你好, 朋友们"],
         typeSpeed: 100,
-        backSpeed: 60,
+        backSpeed: 80,
         loop: true,
     });
 });
