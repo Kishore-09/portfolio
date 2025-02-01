@@ -349,6 +349,17 @@ section .title::after{
 .skills .skills-content .left .p{
     text-align: justify;
  }
+ .skill-list {
+    list-style-type: disc; /* Bullet points */
+    padding-left: 20px; /* Indent for better readability */
+    font-size: 16px; /* Adjust font size */
+    color: white; /* Darker text for better contrast */
+  }
+  
+  .skill-list li {
+    margin-bottom: 8px; /* Adds spacing between list items */
+  }
+  
  .skills .skills-content .left a{
     display: inline-block;
     background: none;
