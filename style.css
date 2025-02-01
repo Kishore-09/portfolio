@@ -483,6 +483,15 @@ section .title::after{
     font-weight: 600;
     margin-bottom: 10px;  
 }
+.contact-content .icons .sub-title a {
+    color: white; /* Changes link color to white */
+    text-decoration: none; /* Removes underline */
+    font-weight: bold; /* Makes the text bold for better visibility */
+  }
+  
+  .contact-content .icons .sub-title a:hover {
+    color: #ddd; /* Light gray on hover for a subtle effect */
+  }
  .contact .contact-content .left p{
      text-align: justify;
  }
@@ -519,11 +528,14 @@ section .title::after{
    height: 45px;
    width: 100%;
    margin-bottom: 15px;
+   color: white;
 }
 
 .contact .right form .textarea{
    height: 80px;
    width: 100%;
+   
+
 
 }
 .contact .right form .name{
